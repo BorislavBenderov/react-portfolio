@@ -12,42 +12,43 @@ export const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <div className="container testimonials__container">
-        <article className="testimonials">
+        <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR1} alt="" />
-            <h5>Ernest Achiever</h5>
+          </div>
+          <h5>Ernest Achiever</h5>
             <small className="client__review">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
             </small>
-          </div>
         </article>
-        <article className="testimonials">
+        <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR2} alt="" />
-            <h5>Ernest Achiever</h5>
+          </div>
+          <h5>Ernest Achiever</h5>
             <small className="client__review">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
             </small>
-          </div>
         </article>
-        <article className="testimonials">
+        <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR3} alt="" />
-            <h5>Ernest Achiever</h5>
+          </div>
+          <h5>Ernest Achiever</h5>
             <small className="client__review">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
             </small>
-          </div>
         </article>
-        <article className="testimonials">
+        <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR4} alt="" />
-            <h5>Ernest Achiever</h5>
+          </div>
+          <h5>Ernest Achiever</h5>
             <small className="client__review">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
             </small>
-          </div>
         </article>
+   
       </div>
     </section>
   );
