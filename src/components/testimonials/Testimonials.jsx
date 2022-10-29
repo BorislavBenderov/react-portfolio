@@ -4,6 +4,10 @@ import AVTR1 from '../../assets/avatar1.jpg';
 import AVTR2 from '../../assets/avatar2.jpg';
 import AVTR3 from '../../assets/avatar3.jpg';
 import AVTR4 from '../../assets/avatar4.jpg';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export const Testimonials = () => {
   return (
@@ -11,45 +15,48 @@ export const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
-        <article className="testimonial">
+      <Swiper className="container testimonials__container"
+        modules={[Pagination]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={AVTR1} alt="" />
           </div>
           <h5>Ernest Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
-            </small>
-        </article>
-        <article className="testimonial">
+          <small className="client__review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
+          </small>
+        </SwiperSlide>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={AVTR2} alt="" />
           </div>
           <h5>Ernest Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
-            </small>
-        </article>
-        <article className="testimonial">
+          <small className="client__review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
+          </small>
+        </SwiperSlide>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={AVTR3} alt="" />
           </div>
           <h5>Ernest Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
-            </small>
-        </article>
-        <article className="testimonial">
+          <small className="client__review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
+          </small>
+        </SwiperSlide>
+        <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={AVTR4} alt="" />
           </div>
           <h5>Ernest Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
-            </small>
-        </article>
-   
-      </div>
+          <small className="client__review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit quia reprehenderit vero provident laudantium recusandae culpa sint fugiat voluptate!
+          </small>
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 }
